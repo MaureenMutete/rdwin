@@ -210,3 +210,140 @@ footer a:hover {
     background-color: #fff;
 
 }
+
+/* ----------- programs.html--------------- */
+/* Artistic and Girlish Header */
+.artistic-header {
+    background-color: #e6f7ff;
+    border-bottom: 4px solid #ffb3ba;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.artistic-header h1 span {
+    color: #ff69b4;
+    font-style: italic;
+}
+
+/* Artistic Main Section */
+.artistic-main {
+    background-image: linear-gradient(to bottom, #d8eaff, #ffb3ba);
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    color: #4a90e2;
+    margin-bottom: 30px;
+    font-family: 'Caveat', cursive;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animated Project Cards */
+.project {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.animated-card::after {
+    content: "";
+    background-color: #ff69b4;
+    opacity: 0.2;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border-radius: 50%;
+    z-index: -1;
+    animation: moveAround 5s infinite ease-in-out;
+}
+
+/* Icons for Projects */
+.icon-heart,
+.icon-money,
+.icon-health,
+.icon-covid,
+.icon-test,
+.icon-hiv {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 15px;
+    animation: popIn 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveAround {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(30px, 30px);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Footer Styling
+footer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer a {
+    color: #ffb3ba;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+} */
+
+/* ---------------------------------- */
