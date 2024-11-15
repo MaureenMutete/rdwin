@@ -72,10 +72,12 @@ section#home {
 .welcome h2 {
     font-size: 2.8rem;
     color: #4a90e2;
+    font-family: 'Caveat', cursive;
 }
 
 .welcome span {
     color: #ffb3ba;
+    font-family: 'Caveat', cursive;
 }
 
 .welcome p {
@@ -348,6 +350,7 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
+    font-family: 'Caveat', cursive;
 }
 
 /* Core Values List */
@@ -411,6 +414,50 @@ h2 {
     font-style: italic;
 }
 
+/* Partners Section */
+#partners {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#partners h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#partners p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between logos */
+}
+
+.partner-logo {
+    width: 150px;
+    /* Maximum width for each logo */
+    height: 100px;
+    /* Maximum height for each logo */
+    object-fit: contain;
+    /* Ensures the logo maintains its aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+    /* Slight zoom-in effect on hover */
+}
+
 /* Artistic Footer Styling */
 footer {
     background-color: #4a90e2;
@@ -435,4 +482,84 @@ footer a:hover {
 .big-feat {
 
     background-color: #F4FAFC;
+}
+
+/* ------------------------ contact us --- */
+
+/* Artistic Main Section for Contact Us */
+#contact-details {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+#contact-details h2 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media h3 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 15px;
+    font-family: 'Caveat', cursive;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #ff69b4;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4a90e2;
+}
+
+/* Footer Styling for Contact Us */
+#contact-footer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#contact-footer a {
+    color: #ffb3ba;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
